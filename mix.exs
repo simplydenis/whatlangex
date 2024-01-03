@@ -5,7 +5,7 @@ defmodule Whatlangex.MixProject do
     [
       app: :whatlangex,
       version: "0.2.1",
-      elixir: "~> 1.14",
+      elixir: "~> 1.13",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
       description: "Whatlang NIF bindings",
@@ -37,7 +37,7 @@ defmodule Whatlangex.MixProject do
     [
       {:ex_doc, ">= 0.29.0", only: :dev, runtime: false},
       {:credo, "~> 1.6", only: [:dev, :test], runtime: false},
-      {:rustler, "~> 0.26.0"}
+      {:rustler, "~> 0.27.0"}
     ]
   end
 
